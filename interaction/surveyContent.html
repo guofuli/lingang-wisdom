@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口标签 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 上述3个meta标签*必须*放在最前面，其他任何内容都*必须*跟随其后！ -->
+    <title>临港智慧安全基础支撑系统门户网站</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../publicModule/css/base.css">
+    <link rel="stylesheet" href="../publicModule/css/TopFoot.css">
+    <link rel="stylesheet" href="./css/surveyContent.css">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="lib/bootstrap/js/html5shiv.min.js"></script>
+    <script src="lib/bootstrap/js/respond.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- 公共头部开始 -->
+    <!--顶部区域-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="head  clearfix">
+                    <div class="head-login fr">
+                        <a href="javascript:;">请登录...</a>
+                    </div>
+                    <div class="logo-box col-xs-12">
+                        <div class="head-logo col-xs-8">
+
+
+                        </div>
+                        <!-- 手机端 nav切换 -->
+                        <div class="navbar-header " id="navbar-header">
+                            <button type="button" class="navbar-toggle">
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- pc端搜索框 -->
+                    <div class="head-search fr col-xs-12 .col-md-4">
+                        <input type="text" value="输入关键字">
+                        <a href="../search/search.html">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 手机端搜索框 -->
+    <div class="mobile-search">
+        <div class="head-search  col-xs-12">
+            <input type="text" value="输入关键字">
+            <a href="../search/search.html">
+                <span></span>
+            </a>
+        </div>
+    </div>
+
+    <!--导航区域-->
+    <nav id="nav-tog">
+        <div class="container">
+            <div class="row">
+                <div class="nav">
+                    <span class="index_navColor col-xs-3 col-sm-2">
+                        <a href="../index.html">
+                            首页
+                        </a>
+                    </span>
+                    <span class="enterprise_navColor col-xs-3  col-sm-2">
+                        <a href="../enterprise/enterprise.html">
+                            园区企业
+                        </a>
+                    </span>
+                    <span class="safety_navColor col-xs-3 col-sm-2">
+                        <a href="../safety/safety.html">
+                            安全动态
+                        </a>
+                    </span>
+                    <span class="publication_navColor col-xs-3 col-sm-2">
+                        <a href="../publication/publication.html">
+                            信息公开
+                        </a>
+                    </span>
+                    <span class="interaction_navColor col-xs-3 col-sm-2">
+                        <a href="./interaction.html">
+                            互动交流
+                        </a>
+                    </span>
+                    <span class="guidance_navColor col-xs-3 col-sm-2">
+                        <a href="../guidance/guidance.html">
+                            网上办事
+                        </a>
+                    </span>
+                    <span class="policy_navColor col-xs-3 col-sm-2">
+                        <a href="../policy/policy.html">
+                            政策法规
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 公共头部结束 -->
+
+
+
+    <!-- 内容区域 -->
+    <section class="ct-box">
+        <div class="container">
+            <div class="row clearfix">
+
+                <div class="ep-box clearfix col-xs-12 col-sm-12 ">
+                    <!-- 位置 -->
+                    <div class="ep-right">
+                        <div class="title-top">
+                            <img src="./images/house.png" alt="" class="house">
+                            <a href="./interaction.html">
+                                <span class="house-sp">互动交流</span>
+                            </a>
+                            <img src="./images/icon.png" alt="" class="gray-icon">
+                            <a href="#">
+                                <span class="gray-span">在线调查</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="content col-xs-12 col-sm-12  ">
+
+                        <div class="contentBox9" style=" min-height:630px; overflow:hidden;">
+
+                            <div id="survey_div">
+                                <div class="anwserContent">
+                                    <div class="s_name_show">临港智慧安全生产综合信息网上线问卷调查</div>
+                                    <div class="sub_div">第1题：您对目前网站主页的总体感觉如何？
+                                        <span id="req_span" class="wargin_span"></span>
+                                    </div>
+                                    <div class="item_div">
+                                        <table border="0" cellpadding="0" cellspacing="0" id="" type="voteRadio">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">很好</td>
+                                                    <!-- <td id="item_17_1" style="display:none">5</td> -->
+                                                    <!-- 百分比进度条 -->
+                                                    <td id="pic_item_17_1" style="text-align:left">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:55.56%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- 票数/票率 -->
+                                                    <td id="pro_item_17_1" style="text-align:left">5票(55.56%)</td>
+                                                    <!-- 是否在投票截止日期内，否则 .pro_btn{display:none;} -->
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">还不错</td>
+                                                    <!-- <td id="item_17_2" style="display:none">0</td> -->
+                                                    <td id="pic_item_17_2" style="text-align:left">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:0%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td id="pro_item_17_2" style="text-align:left">0票(0%)</td>
+
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">一般</td>
+                                                    <!-- <td id="item_17_3" style="display:none">4</td> -->
+                                                    <td id="pic_item_17_3" style="text-align:left">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:44.44%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td id="pro_item_17_3" style="text-align:left">4票(44.44%)</td>
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="sub_div">第2题：网站主页的风格？
+                                        <span id="req_span2" class="wargin_span"></span>
+                                    </div>
+                                    <div class="item_div">
+                                        <table border="0" cellpadding="0" cellspacing="0" id="item_17" type="voteRadio">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">简洁</td>
+                                                    <td id="item_18_1" style="display:none">6</td>
+                                                    <td id="pic_item_18_1" style="text-align:left">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:66.67%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td id="pro_item_18_1" style="text-align:left">6票(66.67%)</td>
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">复杂</td>
+                                                    <!-- <td id="item_18_2" style="display:none">3</td> -->
+                                                    <td id="pic_item_18_2" style="text-align:left  ">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:33.33%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td id="pro_item_18_2" style="text-align:left">3票(33.33%)</td>
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="sub_div">第3题：您对网站主页目前的导航栏分类是否满意？
+                                        <span id="req_span3" class="wargin_span"></span>
+                                    </div>
+                                    <div class="item_div">
+                                        <table border="0" cellpadding="0" cellspacing="0" id="item_18" type="voteRadio">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">满意，分类比较清晰，容易找到类别</td>
+                                                    <!-- <td id="item_19_1" style="display:none">5</td> -->
+                                                    <td id="pic_item_19_1" style="text-align:left">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:55.56%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td id="pro_item_19_1" style="text-align:left">5票(55.56%)</td>
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">不满意，分类混乱，查找不便</td>
+                                                    <!-- <td id="item_19_2" style="display:none">4</td> -->
+                                                    <td id="pic_item_19_2" style="text-align:left">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:44.44%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td id="pro_item_19_2" style="text-align:left">4票(44.44%)</td>
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="sub_div">第4题：目前的页面是否适合您的阅读习惯，您是否能很快找到所需内容？
+                                        <span id="req_span4" class="wargin_span"></span>
+                                    </div>
+                                    <div class="item_div">
+                                        <table border="0" cellpadding="0" cellspacing="0" id="item_19" type="voteRadio">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">是，我可以很方便地找到</td>
+                                                    <!-- <td id="item_20_1" style="display:none">5</td> -->
+                                                    <td id="pic_item_20_1" style="text-align:left" width="155px">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:55.56%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td id="pro_item_20_1" style="text-align:left">5票(55.56%)</td>
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">是，但查找资料仍不够便捷</td>
+                                                    <!-- <td id="item_20_2" style="display:none">0</td> -->
+                                                    <td id="pic_item_20_2" style="text-align:left">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:0%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td id="pro_item_20_2" style="text-align:left">0票(0%)</td>
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:left" score="0">不，寻找起来相当费劲</td>
+                                                    <!-- <td id="item_20_3" style="display:none">4</td> -->
+                                                    <td id="pic_item_20_3" style="text-align:left">
+                                                        <div class="pro_back">
+                                                            <div class="pro_fore" style="width:44.44%">
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td id="pro_item_20_3" style="text-align:left">4票(44.44%)</td>
+                                                    <td class="pro_btn">
+                                                        <button>投票</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="button_div">
+                                <button onclick="window.close()" style="width:60px;">关闭</button>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--公共底部区域-->
+    <footer class="tfoot ">
+        <div class="siteMap">
+            <span>网站导航</span>
+            <select name="country" id="country">
+                <option value="全国安检系统网站1">全国安检系统网站1</option>
+                <option value="全国安检系统网站2">全国安检系统网站2</option>
+                <option value="全国安检系统网站3">全国安检系统网站3</option>
+            </select>
+            <select name="government" id="government">
+                <option value="全国安检系统网站1">市政府部门网站1</option>
+                <option value="全国安检系统网站2">市政府部门网站2</option>
+                <option value="全国安检系统网站3">市政府部门网站3</option>
+            </select>
+            <select name="department" id="department">
+                <option value="全国安检系统网站1">直属单位网站1</option>
+                <option value="全国安检系统网站2">直属单位网站2</option>
+                <option value="全国安检系统网站3">直属单位网站3</option>
+            </select>
+        </div>
+
+        <div class="tfoot-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="btm-left clearfix col-xs-6 col-sm-6">
+                        <div class="btn-wap fl">
+                            <a href="../websiteWap/websiteWap.html" target="_blank">
+                                <img src="../publicModule/images/foot-wap.png" alt="">
+                            </a>
+                        </div>
+                        <div class="btm-left-content fl">
+                            <span class="span-one">安全生产监督管理局</span>
+                            <span>联系电话： 12350</span>
+                            <span>技术支持：上海中威天安公共安全科技有限公司</span>
+                            <span class="cockade"><img src="../publicModule/images/cockade.png" alt="">沪公网安备 320XXXXXXXXX号</span>
+                        </div>
+                    </div>
+
+                    <div class="btm-right clearfix col-xs-6 col-sm-6">
+                        <div class="btn-party fl">
+                            <a href="../websiteWap/websiteWap.html" target="_blank">
+                                <img src="../publicModule/images/foot-wap2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="btm-right-content fl">
+                            <span class="span-one">临港安全生产</span>
+                            <span>LinGang Administration of Work Safety</span>
+                            <span>沪ICP备110XXXX号</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- 公共底部结束 -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/jquery-1.12.4.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="./lib/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="../publicModule/js/TopFoot.js"></script>
+    <script src="./js/surveyContent.js"></script>
+
+
+</body>
+
+</html>

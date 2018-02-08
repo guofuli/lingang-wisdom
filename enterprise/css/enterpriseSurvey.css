@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/*内容展示*/
+
+section.ct-box{
+    background-color: #ffffff;
+}
+
+
+section.ct-box .ep-left ul{
+    margin-top:20px;
+}
+
+section.ct-box .ep-left .arrow a{
+    display: block;
+}
+    
+
+section.ct-box .ep-left ul li{
+    width: 100%;
+    height: 50px;
+    line-height:50px;
+    margin-top:4px;
+    background-color: #f6f6f6;
+}
+section.ct-box .ep-left ul li.ep-left-one{
+   background: url("../images/title.png") no-repeat;
+     background-size: 100% 100%; 
+}
+section.ct-box .ep-left ul li span{
+    display: block;
+    color: #333333;
+    font-size: 16px;
+    text-align:center ;
+}
+#active-gray{
+     background-color: #e3e3e3;
+ }
+section.ct-box .ep-left>ul li:hover span{
+    color: #4075c5;
+}
+
+@media(max-width: 767px){
+    section.ct-box .ep-left ul li{
+        width: 33.3%;
+        height: 50px;
+        line-height: 50px;
+        float: left;
+    }
+    section.ct-box .ep-left ul li span{
+      
+        font-size: 14px;
+      
+    }
+}
+
+/* @media(max-width: 480px){
+    section.ct-box .ep-left ul li.ep-left-one{
+        background: url("../images/yqqy-mall.png")no-repeat;
+        background-size:100% 100%;
+     }
+
+
+} */
+
+section.ct-box .ep-right{
+    /* margin-left: 20px; */
+}
+section.ct-box .ep-right .title-top{
+    height:50px;
+    color: #999999;
+    font-size: 12px;
+    padding-top:20px;
+}
+section.ct-box .ep-right .title-top span{
+    margin-left:5px;
+}
+section.ct-box .ep-right .title-top img{
+    display: inline-block;
+}
+.ct-box .ep-right .title-top .house{
+    margin-bottom: 2px;
+    width: 14px;
+    height:14px;
+}
+.ct-box .ep-right .title-top .gray-icon{
+    width: 3px;
+    height: 6px;
+    margin-left: 5px;
+}
+
+section.ct-box .ep-right .container-box {
+    padding:20px;
+    background-color: #f9f9f9;
+}
+
+section.ct-box .ep-right  .total-echart1 h2{
+font-size: 16px;
+color: #000;
+text-align:center; 
+margin-bottom: 0px;
+}
+section.ct-box .ep-right  .total-echart1 h2 span{
+    color: #59cb6a;
+    margin-left: 10px;
+    font-size: 21px;
+}
+
+section.ct-box .ep-right .total-echart{
+    height:343px; 
+    background-color: #ffffff;
+}
+
+
+/* <!-- 企业管理总数 --> */
+
+section.ct-box .ep-right .statistics{
+    /* width: 100%; */
+    height: 300px;
+}
+
+
+/* 企业分级 */
+section.ct-box .ep-right .total-statistics{
+    /* width: 100%; */
+    height: 300px;
+    margin: 0  auto;
+}
+section.ct-box .ep-right  .total-echart2 h2{
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    padding-top: 30px;
+}
+/* 危化品（折线) */
+
+.chemical-statistics{
+    height: 300px;
+    /* width: 100%; */
+    background-color: #ffffff !important;
+}
+section.ct-box .ep-right  .chemical-echart{
+    width: 100%;
+    padding:20px;
+    background-color: #f9f9f9; 
+    padding-top:0;
+}
+section.ct-box .ep-right  .chemical-echart h2{
+    font-size: 16px;
+    color: #000;
+    text-align:center; 
+    margin-bottom: 0px;
+    margin-top:0;
+    padding-top:20px; 
+
+    background-color: #ffffff;
+    }
+
+ section.ct-box .ep-right  .chemical-echart h2 span{
+        color: #ff9867;
+        margin-left: 10px;
+        font-size: 21px;
+    }
+    
+
+    /* 统计图屏幕适配 */
+     /* @media(max-width: 1170px){
+        section.ct-box .ep-right #statistics canvas{
+               width: 200px;
+               height: 200px;
+           }
+           
+           section.ct-box .ep-right #total-statistics canvas{
+               width: 200px;height: 200px;
+           }
+       
+           #chemical-statistics canvas{
+               width: 200px;height: 200px;
+       }   */
+       /* @media(max-width: 970px){
+        section.ct-box .ep-right #statistics canvas{
+              width: 400px;
+          }
+          
+          section.ct-box .ep-right #total-statistics canvas{
+              width: 400px;
+          }
+      
+          #chemical-statistics canvas{
+              width: 400px;
+      }
+      @media(max-width: 750px){
+        section.ct-box .ep-right #statistics canvas{
+            width: 300px;
+        }
+        
+        section.ct-box .ep-right #total-statistics canvas{
+            width: 300px;
+        }
+    
+        #chemical-statistics canvas{
+            width: 300px;
+    }
+     
+   */
+      /* @media(max-width: 480px){
+       section.ct-box .ep-right #statistics canvas{
+            width: 200px;
+        }
+        
+        section.ct-box .ep-right #total-statistics canvas{
+            width: 200px;
+        }
+    
+        #chemical-statistics canvas{
+            width: 200px;
+    } 
+   
+     */
+
+
+
+
+
+     
+/* 头部导航栏点击高亮 */
+nav .nav span.enterprise_navColor{
+	background-color: #5cc025;
+	cursor: pointer;
+}
+nav .nav span.YQQY_navColor{
+	background-color: #5cc025;
+	cursor: pointer;
+}
+/* 搜索框手机端隐藏 */
+@media (max-width: 750px) {
+	header .head-search{
+	 display: none !important;	
+	}
+	.mobile-search  .head-search{
+		display: none !important;	
+	   }
+	 
+}

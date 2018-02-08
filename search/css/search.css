@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/*内容展示*/
+
+section.ct-box {
+    background-color: #ffffff;
+}
+
+section.ct-box .title-top {
+    height: 50px;
+    color: #999999;
+    font-size: 12px;
+    line-height: 50px;
+    /* margin-top: 20px; */
+}
+
+section.ct-box .title-top .title-top-left {
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+
+section.ct-box .title-top span {
+    margin-left: 5px;
+}
+
+section.ct-box .title-top img {
+    display: inline-block;
+    width: 200px;
+}
+
+.ct-box .title-top .house {
+    margin-bottom: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+.ct-box .title-top .gray-icon {
+    width: 3px;
+    height: 6px;
+    margin-left: 5px;
+}
+
+
+
+/* <!--内容列表--> */
+
+/* 搜索关键字 */
+
+.ct-box .ssgjz {
+    width: 100%;
+    line-height: 40px;
+    background: #EFEFEF;
+    margin: 0px auto;
+    font-family: "黑体";
+    font-size: 14px;
+    color: #000000;
+    padding-left: 15px;
+}
+.ct-box .ssgjz font {
+    color: #CC0033;
+}
+
+/* 搜索列表 */
+
+.ct-box .search-result{
+    width: 100%; 
+    margin-bottom: 100px; 
+
+}
+
+.ct-box .search-result li{
+      margin-top: 10PX;
+       background-color: #F9F9F9;
+        padding: 20PX;
+}
+
+.ct-box .search-result .ssjgy_zt{
+    font-size: 16px;
+    color: #2869c1;
+}
+.ct-box .search-result .ssjgy_bt{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.ct-box .search-result .ssjgy_bt a{
+    font-size: 16px;
+    color: #333333;
+}
+.ct-box .search-result .ssjgy_bt:hover a{
+    color: #2869c1;
+}
+.ct-box .search-result .ssjgy_sj{
+    font-size: 12px;
+    color: #999999;
+}
+.ct-box .search-result .ssjgy_jj{
+    font-size: 14px;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}.ct-box .search-result .ssjgy_lj{
+    font-size: 12px;
+    color: #999999;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/* 搜索框手机端隐藏 */
+@media (max-width: 750px) {
+	header .head-search{
+	 display: none !important;	
+	}
+	.mobile-search  .head-search{
+		display: none !important;	
+	   }
+	 
+}

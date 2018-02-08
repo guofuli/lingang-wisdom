@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+section.ct-box .ep-right .title-top{
+    height:50px;
+    color: #999999;
+    font-size: 12px;
+    line-height: 50px;
+}
+section.ct-box .ep-right .title-top span{
+    margin-left:5px;
+}
+section.ct-box .ep-right .title-top img{
+    display: inline-block;
+}
+.ct-box .ep-right .title-top .house{
+    margin-bottom: 2px;
+    width: 14px;
+    height:14px;
+}
+.ct-box .ep-right .title-top .gray-icon{
+    width: 3px;
+    height: 6px;
+    margin-left: 5px;
+}
+
+
+.title-top a:hover{
+    color:#2869c1;
+}
+
+section.ct-box .content{
+    /* width: 100%; */
+    margin-top:20px; 
+     margin-bottom: 100px;
+    background-color: #f9f9f9;
+    padding: 0 45px;
+}
+
+#ct-img{
+    text-align: center;
+ }
+ #ct-img img{
+     margin: 10px auto;
+     display:inline-block;
+     width:70%;
+ }
+
+@media (max-width: 750px) {
+    section.ct-box .content{
+       
+        padding: 0 10px;
+    }
+    #ct-img img{
+       
+        width:80%;
+    }    
+
+}
+
+
+.title{
+    width: 100%;
+    /* height: 110px; */
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+    padding-top: 25px;
+}
+.title p:nth-of-type(1){
+    font-size: 20px;
+    color: #333;
+    margin:0 0 10px 0;
+}
+.title p:nth-of-type(2){
+    font-size: 14px;
+    color: #999;
+}
+.info{
+    padding: 20px 0;
+}
+.info p{
+    margin: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    text-indent: 2em;
+}
+
+
+
+/* 头部导航栏点击高亮 */
+nav .nav span.safety_navColor{
+    background-color: #5cc025;
+    cursor: pointer;
+}
+nav .nav span.AQDT_navColor{
+    background-color: #5cc025;
+    cursor: pointer;
+}
+/* 搜索框手机端隐藏 */
+@media (max-width: 750px) {
+	header .head-search{
+	 display: none !important;	
+	}
+	.mobile-search  .head-search{
+		display: none !important;	
+	   }
+	 
+}

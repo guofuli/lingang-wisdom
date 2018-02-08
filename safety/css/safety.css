@@ -1,0 +1,262 @@
+﻿@charset "utf-8";
+
+
+
+
+/*内容展示*/
+/* 左侧导航条  */
+section.ct-box{
+    background-color: #ffffff;
+}
+
+
+section.ct-box .ep-left>ul{
+    margin-top:20px;
+}
+
+   
+section.ct-box .ep-left>ul>li{
+    /* width: 220px; */
+    line-height:50px;
+    margin-top:4px;
+    background-color: #f6f6f6;
+    padding: 0;
+}
+
+@media (min-width: 1170px){
+    /* section.ct-box .ep-left>ul>li{
+        width: 200px; 
+       
+    } */
+}
+
+.tog-class{
+    background: #e3e3e3;
+}
+section.ct-box .ep-left>ul>li.arrow .show-title{
+    cursor: pointer;
+    text-align: center;
+}
+section.ct-box .ep-left>ul>.ep-left-one,
+section.ct-box .ep-left>ul>.ep-left-three{
+    height: 50px;
+}
+section.ct-box .ep-left>ul>.ep-left-one img{
+    height: 100%;
+    width: 100%;
+}
+section.ct-box .ep-left>ul>li #menu-hid{
+    padding-bottom:5px;
+    /*display: none;*/
+    background-color:#f6f6f6;
+}
+section.ct-box .ep-left>ul>li a p{
+    width:100%;
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+    color: rgba(0,0,0,0.8);
+    font-size: 14px;
+    margin-top:4px;
+}
+section.ct-box .ep-left>ul>li:hover .show-title span{
+    color:#4075c5;
+}
+section.ct-box .ep-left>ul>li a:hover p{
+    color:#4075c5;
+}
+section.ct-box .ep-left>ul>li.arrow img{
+    width: 10px;
+    height: 6px;
+    display: inline-block;
+    margin-left: 5px;
+}
+section.ct-box .ep-left>ul>.ep-left-three span{
+    margin-left: -15px;
+}
+section.ct-box .ep-left>ul>li span{
+    color: #333333;
+    font-size: 16px;
+    /* margin-left:80px; */
+}
+
+@media (max-width: 767px){
+
+    section.ct-box .ep-left>ul>li{
+        width:50%;
+        height: 50px;
+        line-height:50px;
+        float: left;
+       
+    }
+    /* section.ct-box .ep-left>ul>li.ep-left-three{
+        float: right;
+    }  */
+    #menu-hid{
+        display:none; 
+        position: absolute;
+        z-index: 9999;
+        width: 30%;
+        
+    }
+    .tog-class{
+        background: none;
+    }
+  
+}
+
+
+/*右侧内容*/
+section.ct-box .ep-right{
+    /* margin-left: 20px; */
+}
+section.ct-box .ep-right .title-top{
+    height:50px;
+    color: #999999;
+    font-size: 12px;
+    padding-top:20px;
+}
+section.ct-box .ep-right .title-top span{
+    margin-left:5px;
+}
+section.ct-box .ep-right .title-top img{
+    display: inline-block;
+}
+.ct-box .ep-right .title-top .house{
+    margin-bottom: 2px;
+    width: 14px;
+    height:14px;
+}
+.ct-box .ep-right .title-top .gray-icon{
+    width: 3px;
+    height: 6px;
+    margin-left: 5px;
+}
+/* 表格 */
+.echartsContent{
+    position: relative;
+    height: 360px;
+    padding-top: 15px;
+    background-color: #f9f9f9;
+}
+.statistics{
+    width: 100%;
+	height: 100%;
+	background-color:#f9f9f9 !important;
+}
+.date{
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    height: 36px;
+    width: 190px;
+    line-height: 36px;
+    font-size: 14px;
+}
+.date span{
+    display: inline-block;
+    background-color: #ebebeb;
+    color: #666;
+    text-align: center;
+}
+.date span img{
+    margin-left: 10px;
+    display: inline-block;
+    width: 8px;
+}
+.date span:nth-of-type(1){
+    width: 100px;
+}
+.date span:nth-of-type(2){
+    width: 70px;
+    margin-left: 10px;
+}
+
+
+/* 信息列表 */
+.infoTitle{
+    /* height: 40px; */
+    line-height: 40px;
+    font-size: 16px;
+    color: #666;
+}
+.infoContent{
+    padding: 15px 10px;
+    background-color: #f9f9f9;
+    /* 去掉页脚会自动上升 */
+    /*height: 720px;*/
+    margin-bottom:100px;
+}
+.infoContent li{
+    /* height: 45px; */
+    line-height: 45px;
+    font-size: 14px;
+    color: #696969;
+
+    
+}
+.infoContent li a{
+    color: #696969;
+    display: inline-block;
+    width: 85%;
+
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.infoContent li img{
+    width: 5px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.infoContent li span{
+    line-height: 45px;
+    float: right;
+    color: #696969;
+    font-size: 16px;
+    margin-left:10px;  
+   
+}
+.infoContent li:hover a{
+    color:#2869c1;
+     
+}
+
+.title-top a:hover{
+    color:#2869c1 ;
+}
+
+@media (max-width: 480px){
+    .infoContent li a{
+    width:78%;
+    }
+
+    .infoContent li img{
+        margin-right: 10px;
+    
+    }
+}
+
+
+
+
+   /* 头部导航栏点击高亮 */
+   nav .nav span.safety_navColor{
+    background-color: #5cc025;
+    cursor: pointer;
+}
+nav .nav span.AQDT_navColor{
+    background-color: #5cc025;
+    cursor: pointer;
+}
+/* 搜索框手机端隐藏 */
+@media (max-width: 750px) {
+	header .head-search{
+	 display: none !important;	
+	}
+	.mobile-search  .head-search{
+		display: none !important;	
+	   }
+	 
+}

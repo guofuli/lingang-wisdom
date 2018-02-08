@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/*内容展示*/
+
+section.ct-box {
+    background-color: #ffffff;
+}
+
+section.ct-box .title-top {
+    height: 50px;
+    color: #999999;
+    font-size: 12px;
+    line-height: 50px;
+    /* margin-top: 20px; */
+}
+
+section.ct-box .title-top .title-top-left {
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+
+section.ct-box .title-top span {
+    margin-left: 5px;
+}
+
+section.ct-box .title-top img {
+    display: inline-block;
+    width: 200px;
+}
+
+.ct-box .title-top .house {
+    margin-bottom: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+.ct-box .title-top .gray-icon {
+    width: 3px;
+    height: 6px;
+    margin-left: 5px;
+}
+
+
+.title-top a:hover{
+    color:#2869c1;
+}
+
+
+/* <!--内容列表--> */
+.wzdtcontent {
+	margin-bottom:200px;
+}
+
+.wzdtcontent ul {
+    padding: 0;
+    margin-bottom: 10px;
+    float: left;
+	width: 100%;
+	height: 100%;
+	background-color: #f9f9f9;
+	
+}
+
+
+.wzdtcontent ul li{
+ 
+padding: 0;
+margin: 0px;
+margin-left: 50px;
+text-align: left;
+float: left;
+/* width: 15%; */
+height: 70px;
+line-height: 70px;
+color: #666666;
+font-size: 16px;
+ 
+
+}
+
+
+.wzdtcontent ul .wzdtctli {
+	width: 150px;
+	background-color: #efefef;
+	text-align: center;
+	margin-left: 0;
+}
+.wzdtcontent ul .wzdtctli  h3{
+	margin: 0;
+	padding: 0;
+	line-height: inherit;
+	text-align: center;
+}
+
+
+
+
+
+/* 头部导航栏点击高亮 */
+nav .nav span.index_navColor{
+	background-color: #5cc025;
+	cursor: pointer;
+}
+nav .nav span.HY_navColor{
+    background-color: #5cc025;
+    cursor: pointer;
+}
+
+/* 搜索框手机端隐藏 */
+@media (max-width: 750px) {
+	header .head-search{
+	 display: none !important;	
+	}
+	.mobile-search  .head-search{
+		display: none !important;	
+	   }
+	 
+}

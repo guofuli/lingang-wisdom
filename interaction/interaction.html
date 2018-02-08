@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口标签 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 上述3个meta标签*必须*放在最前面，其他任何内容都*必须*跟随其后！ -->
+    <title>临港智慧安全基础支撑系统门户网站</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- 表单 -->
+    <link rel="stylesheet" type="text/css" href="./css/input.css" />
+
+    <link rel="stylesheet" href="../publicModule/css/base.css">
+    <link rel="stylesheet" href="../publicModule/css/TopFoot.css">
+    <link rel="stylesheet" href="./css/interaction.css">
+
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="lib/bootstrap/js/html5shiv.min.js"></script>
+    <script src="lib/bootstrap/js/respond.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- 公共头部开始 -->
+    <!--顶部区域-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="head  clearfix">
+                    <div class="head-login fr">
+                        <a href="javascript:;">请登录...</a>
+                    </div>
+                    <div class="logo-box col-xs-12">
+                        <div class="head-logo col-xs-8">
+
+
+                        </div>
+                        <!-- 手机端 nav切换 -->
+                        <div class="navbar-header " id="navbar-header">
+                            <button type="button" class="navbar-toggle">
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- pc端搜索框 -->
+                    <div class="head-search fr col-xs-12 .col-md-4">
+                        <input type="text" value="输入关键字">
+                        <a href="../search/search.html">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 手机端搜索框 -->
+    <div class="mobile-search">
+        <div class="head-search  col-xs-12">
+            <input type="text" value="输入关键字">
+            <a href="../search/search.html">
+                <span></span>
+            </a>
+        </div>
+    </div>
+
+    <!--导航区域-->
+    <nav id="nav-tog">
+        <div class="container">
+            <div class="row">
+                <div class="nav">
+                    <span class="index_navColor col-xs-3 col-sm-2">
+                        <a href="../index.html">
+                            首页
+                        </a>
+                    </span>
+                    <span class="enterprise_navColor col-xs-3  col-sm-2">
+                        <a href="../enterprise/enterprise.html">
+                            园区企业
+                        </a>
+                    </span>
+                    <span class="safety_navColor col-xs-3 col-sm-2">
+                        <a href="../safety/safety.html">
+                            安全动态
+                        </a>
+                    </span>
+                    <span class="publication_navColor col-xs-3 col-sm-2">
+                        <a href="../publication/publication.html">
+                            信息公开
+                        </a>
+                    </span>
+                    <span class="interaction_navColor col-xs-3 col-sm-2">
+                        <a href="./interaction.html">
+                            互动交流
+                        </a>
+                    </span>
+                    <span class="guidance_navColor col-xs-3 col-sm-2">
+                        <a href="../guidance/guidance.html">
+                            网上办事
+                        </a>
+                    </span>
+                    <span class="policy_navColor col-xs-3 col-sm-2">
+                        <a href="../policy/policy.html">
+                            政策法规
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 公共头部结束 -->
+
+
+
+    <!--互动交流分类导航内容-->
+    <section class=" ct-box">
+        <div class="container">
+            <div class="row">
+                <div class="pc-box clearfix">
+                    <!--左边栏-->
+                    <div class="pc-left col-xs-12 col-sm-3 col-md-3 col-lg-2" id="pc-left">
+                        <!--iq-ui侧边栏-->
+                        <ul class="ul-hid2">
+                            <li class="pc-left-one hidden-xs">
+                                <a href="javascript:;">
+                                    <img src="./images/互动交流-logo.png" alt="">
+                                </a>
+                            </li>
+                            <li class="pc-left-two arrow">
+                                <div class="show-title">
+                                    <span>领导信箱</span>
+                                </div>
+                            </li>
+                            <li class="pc-left-three arrow">
+                                <div class="show-title">
+                                    <span>监督投诉</span>
+                                </div>
+                            </li>
+                            <li class="pc-left-four arrow">
+                                <div class="show-title">
+                                    <span>在线留言</span>
+                                </div>
+                            </li>
+                            <li class="pc-left-five arrow">
+                                <div class="show-title">
+                                    <span>便民问答</span>
+                                </div>
+                            </li>
+                            <li class="pc-left-six arrow">
+                                <div class="show-title">
+                                    <span>在线访谈</span>
+                                </div>
+                            </li>
+                            <li class="pc-left-seven arrow">
+                                <div class="show-title">
+                                    <span>在线调查</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!--右边分栏栏-->
+                    <div class="pc-right-box " id="pc-right-box">
+
+                        <!--分栏1 领导信箱-->
+                        <div class="pc-right col-xs-12 col-sm-9 col-md-9 col-lg-10" id="pc-right-two">
+                            <div class="title-top">
+                                <img src="./images/house.png" alt="" class="house">
+                                <span>互动交流</span>
+                                <img src="./images/icon.png" alt="" class="gray-icon">
+                                <span>领导信箱</span>
+                            </div>
+
+
+                            <!--内容填充 表格验证-->
+                            <div class="leader-email codeView docs-example">
+                                <form action="" method="GET" name="leaderForm" class="form leaderForm  form-horizontal cl" id="demoform-1">
+
+                                    <!-- 姓名 -->
+                                    <div class="row cl">
+                                        <label for="myname" class="form-label col-xs-4 col-sm-3">真实姓名：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <!-- id和name最好同时写上 -->
+                                            <input type="text" id="myname" name="myname" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 性别-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3"></label>
+                                        <div class="formControls skin-minimal col-xs-8 col-sm-9">
+                                            <div class="radio-box">
+                                                <div class="iradio-blue checked" id="sex_man">
+                                                    <input type="radio" id="sex-1" name="sex" checked="" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity:0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="sex-1" class="">男</label>
+                                            </div>
+                                            <div class="radio-box">
+                                                <div class="iradio-blue" id="sex_woman">
+                                                    <input type="radio" id="sex-0" name="sex" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="sex-0" class="">女</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 职业 -->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">职业：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <div class="select-box">
+                                                <select class="select" size="1" name="demo1">
+                                                    <option value="工人">工人</option>
+                                                    <option value="教师">教师</option>
+                                                    <option value="学生">学生</option>
+                                                    <option value="个体经营者">个体经营者</option>
+                                                    <option value="企业管理人员">企业管理人员</option>
+                                                    <option value="事业单位工作人员">事业单位工作人员</option>
+                                                    <option value="自由职业者">自由职业者</option>
+                                                    <option value="退（离）休人员">退（离）休人员</option>
+                                                    <option value="其它">其它</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 身份证 -->
+                                    <div class="row cl">
+                                        <label for="identity" class="form-label col-xs-4 col-sm-3">身份证：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" id="identity" name="identity" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 邮箱 -->
+                                    <div class="row cl">
+                                        <label for="email" class="form-label col-xs-4 col-sm-3">邮箱：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="email" id="email" name="email" />
+                                        </div>
+                                    </div>
+
+                                    <!--联系电话 -->
+                                    <div class="row cl">
+                                        <label for="telephone" class="form-label col-xs-4 col-sm-3">联系电话：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" id="telephone" name="telephone" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 联系地址-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">联系地址：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text " autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <!-- 信息分类-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">信息分类：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text inforSort" autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <!-- 信息标题-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">信息标题：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text inforTitle" autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+
+
+                                    <!-- 文件上传 -->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">上传附件：</label>
+                                        <div class="formControls upload-file  col-xs-8 col-sm-9">
+                                            <span class="btn-upload form-group">
+                                                <input class="input-text upload-url" type="text" name="uploadfile-2" id="uploadfile-2" readonly="">
+                                                <a href="javascript:void();" class="btn btn-primary upload-btn">
+                                                    <i class="Hui-iconfont"></i> 浏览文件</a>
+                                                <input type="file" multiple="" name="file-2" class="input-file">
+                                            </span>
+                                            <br>
+                                            <span>允许上传文件格式为：jpg,png,bmp,gif,doc,xls,txt,zip;附件小于5M;</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 信件内容-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">信件内容：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <textarea class="textarea" placeholder="" rows="" cols="" name=""></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- 公开意愿-->
+                                    <div class="row cl public-or">
+                                        <label class="form-label col-xs-4 col-sm-3">公开意愿：</label>
+                                        <div class="formControls ispublic skin-minimal col-xs-8 col-sm-9">
+                                            <div class="radio-box">
+                                                <div class="iradio-blue checked" id="public_y">
+                                                    <input type="radio" id="pui-0" name="pui" checked="" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="pui-1" class="">同意</label>
+                                            </div>
+                                            <div class="radio-box">
+                                                <div class="iradio-blue" id="public_n">
+                                                    <input type="radio" id="pui-1" name="pui" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="pui-0" class="">不同意</label>
+                                            </div>
+                                            <span>如果您选择"不同意",我们将对您的写信内容及办理结果不进行公示！</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 验证码-->
+                                    <div class="row cl auth-box">
+                                        <label class="form-label col-xs-4 col-sm-3">验证码：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text authCode" id="authCode" autocomplete="off" placeholder="">
+
+                                            <!--注： 开发中后台如果展示的图片验证码，将span中文字去掉，img标签注释去掉 -->
+                                            <span>6+9=？
+                                                <!-- <img alt="" src="" id="auth_img" align="absmiddle"> -->
+                                            </span>
+                                            <button id="auth_togbtn">看不清，请换一张</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- border -->
+                                    <div class="gay-boder col-xs-12 col-sm-12">
+
+                                    </div>
+
+
+                                    <!-- 提交 -->
+                                    <div class="btn-btm  cl col-xs-6 col-sm-6">
+                                        <div class="fr ">
+                                            <input class="btn btn-primary " type="submit" value="提 交">
+                                        </div>
+                                    </div>
+
+                                    <!-- 重置 -->
+                                    <div class="btn-btm  cl col-xs-6 col-sm-6 ">
+                                        <div class="fl ">
+                                            <input class="btn btn-reset" type="submit" value="重 置">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+
+
+                        <!--分栏2 监督投诉-->
+                        <div class="pc-right col-xs-12 col-sm-9 col-md-9 col-lg-10" id="pc-right-three">
+                            <div class="title-top">
+                                <img src="./images/house.png" alt="" class="house">
+                                <span>互动交流</span>
+                                <img src="./images/icon.png" alt="" class="gray-icon">
+                                <span>监督投诉</span>
+
+                            </div>
+
+
+                            <!--监督投诉-->
+
+                            <!--内容填充 表格验证-->
+                            <div class="supervise-complain codeView docs-example">
+                                <form action="" method="GET" name="leaderForm" class="form complainForm  form-horizontal cl" id="demoform-2">
+
+                                    <!-- 姓名 -->
+                                    <div class="row cl">
+                                        <label for="spv-myname" class="form-label col-xs-4 col-sm-3">真实姓名：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <!-- id和name最好同时写上 -->
+                                            <input type="text" id="spv-myname" name="spv-myname" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 性别-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3"></label>
+                                        <div class="formControls skin-minimal col-xs-8 col-sm-9">
+                                            <div class="radio-box">
+                                                <div class="iradio-blue checked" id="spv_sex_man">
+                                                    <input type="radio" id="spv-sex-1" name="spv-sex" checked="" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="spv-sex-1" class="">男</label>
+                                            </div>
+                                            <div class="radio-box">
+                                                <div class="iradio-blue" id="spv_sex_woman">
+                                                    <input type="radio" id="spv-sex-0" name="spv-sex" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity:0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="spv-sex-0" class="">女</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 职业 -->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">职业：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <div class="select-box">
+                                                <select class="spv-select select" size="1" name="demo2">
+
+                                                    <option value="教师">教师</option>
+                                                    <option value="工人">工人</option>
+                                                    <option value="学生">学生</option>
+                                                    <option value="个体经营者">个体经营者</option>
+                                                    <option value="企业管理人员">企业管理人员</option>
+                                                    <option value="事业单位工作人员">事业单位工作人员</option>
+                                                    <option value="自由职业者">自由职业者</option>
+                                                    <option value="退（离）休人员">退（离）休人员</option>
+                                                    <option value="其它">其它</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 身份证 -->
+                                    <div class="row cl">
+                                        <label for="spv-identity" class="form-label col-xs-4 col-sm-3">身份证：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" id="spv-identity" name="spv-identity" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 邮箱 -->
+                                    <div class="row cl">
+                                        <label for="spv-email" class="form-label col-xs-4 col-sm-3">邮箱：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="email" id="spv-email" name="spv-email" />
+                                        </div>
+                                    </div>
+
+                                    <!--联系电话 -->
+                                    <div class="row cl">
+                                        <label for="spv-telephone" class="form-label col-xs-4 col-sm-3">联系电话：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" id="spv-telephone" name="spv-telephone" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 联系地址-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">联系地址：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text spv-input" autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <!-- 信息分类-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">信息分类：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text spv-inforSort" autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <!-- 信息标题-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">信息标题：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text spv-inforTitle" autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+
+
+                                    <!-- 文件上传 -->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">上传附件：</label>
+                                        <div class="formControls upload-file  col-xs-8 col-sm-9">
+                                            <span class="btn-upload form-group">
+                                                <input class="input-text upload-url" type="text" name="spv-uploadfile-2" id="spv-uploadfile-2" readonly="">
+                                                <a href="javascript:void();" class="btn btn-primary upload-btn">
+                                                    <i class="Hui-iconfont"></i> 浏览文件</a>
+                                                <input type="file" multiple="" name="spv-file-2" class="input-file">
+                                            </span>
+                                            <br>
+                                            <span>允许上传文件格式为：jpg,png,bmp,gif,doc,xls,txt,zip;附件小于5M;</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 信件内容-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">信件内容：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <textarea class="textarea spv-txt" placeholder="" rows="" cols="" name=""></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- 公开意愿-->
+                                    <div class="row cl public-or">
+                                        <label class="form-label col-xs-4 col-sm-3">公开意愿：</label>
+                                        <div class="formControls ispublic skin-minimal col-xs-8 col-sm-9">
+                                            <div class="radio-box">
+                                                <div class="iradio-blue checked" id="spv_public_y">
+                                                    <input type="radio" id="spv-pui-0" name="spv-pui" checked="" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="spv-pui-0" class="">同意</label>
+                                            </div>
+                                            <div class="radio-box">
+                                                <div class="iradio-blue" id="spv_public_n">
+                                                    <input type="radio" id="spv-pui-1" name="spv-pui" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity:0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="spv-pui-1" class="">不同意</label>
+                                            </div>
+                                            <span>如果您选择"不同意",我们将对您的写信内容及办理结果不进行公示！</span>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- 验证码-->
+                                    <div class="row cl auth-box">
+                                        <label class="form-label col-xs-4 col-sm-3">验证码：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text authCode" id="spv-authCode" autocomplete="off" placeholder="">
+
+                                            <!--注： 开发中后台如果展示的图片验证码，将span中文字去掉，img标签注释去掉 -->
+                                            <span>6+9=？
+                                                <!-- <img alt="" src="" id="spv_auth_img" align="absmiddle">-->
+                                            </span>
+                                            <button id="spv_auth_togbtn">看不清，请换一张</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- border -->
+                                    <div class="gay-boder col-xs-12 col-sm-12">
+
+                                    </div>
+
+
+                                    <!-- 提交 -->
+                                    <div class="btn-btm  cl col-xs-6 col-sm-6">
+                                        <div class="fr ">
+                                            <input class="btn btn-primary " id="spv-sub" type="submit" value="提 交">
+                                        </div>
+                                    </div>
+
+                                    <!-- 重置 -->
+                                    <div class="btn-btm  cl col-xs-6 col-sm-6 ">
+                                        <div class="fl ">
+                                            <input class="btn btn-reset" id="spv-res" type="submit" value="重 置">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+
+
+                        <!--分栏3 在线留言 online message-->
+                        <div class="pc-right col-xs-12 col-sm-9 col-md-9 col-lg-10" id="pc-right-four">
+                            <div class="title-top">
+                                <img src="./images/house.png" alt="" class="house">
+                                <span>互动交流</span>
+                                <img src="./images/icon.png" alt="" class="gray-icon">
+                                <span>在线留言</span>
+                            </div>
+
+
+                            <!--在线留言-->
+
+                            <!--内容填充 表格验证-->
+                            <div class="online-message codeView docs-example">
+                                <form action="" method="GET" name="leaderForm" class="form messageForm  form-horizontal cl" id="demoform-3">
+
+                                    <!-- 姓名 -->
+                                    <div class="row cl">
+                                        <label for="msg-myname" class="form-label col-xs-4 col-sm-3">真实姓名：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <!-- id和name最好同时写上 -->
+                                            <input type="text" id="msg-myname" name="msg-myname" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 性别-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3"></label>
+                                        <div class="formControls skin-minimal col-xs-8 col-sm-9">
+                                            <div class="radio-box">
+                                                <div class="iradio-blue checked" id="msg_sex_man">
+                                                    <input type="radio" id="msg-sex-1" name="msg-sex" checked=" " style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity:0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="msg-sex-1" class="">男</label>
+                                            </div>
+                                            <div class="radio-box">
+                                                <div class="iradio-blue" id="msg_sex_woman">
+                                                    <input type="radio" id="msg-sex-0" name="msg-sex" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="msg-sex-0" class="">女</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 职业 -->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">职业：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <div class="select-box">
+                                                <select class="msg-select select" size="1" name="demo2">
+
+                                                    <option value="学生">学生</option>
+                                                    <option value="教师">教师</option>
+                                                    <option value="工人">工人</option>
+                                                    <option value="个体经营者">个体经营者</option>
+                                                    <option value="企业管理人员">企业管理人员</option>
+                                                    <option value="事业单位工作人员">事业单位工作人员</option>
+                                                    <option value="自由职业者">自由职业者</option>
+                                                    <option value="退（离）休人员">退（离）休人员</option>
+                                                    <option value="其它">其它</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 身份证 -->
+                                    <div class="row cl">
+                                        <label for="msg-identity" class="form-label col-xs-4 col-sm-3">身份证：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" id="msg-identity" name="msg-identity" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 邮箱 -->
+                                    <div class="row cl">
+                                        <label for="msg-email" class="form-label col-xs-4 col-sm-3">邮箱：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="email" id="msg-email" name="msg-email" />
+                                        </div>
+                                    </div>
+
+                                    <!--联系电话 -->
+                                    <div class="row cl">
+                                        <label for="msg-telephone" class="form-label col-xs-4 col-sm-3">联系电话：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" id="msg-telephone" name="msg-telephone" />
+                                        </div>
+                                    </div>
+
+                                    <!-- 联系地址-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">联系地址：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text msg-input" autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <!-- 信息分类-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">信息分类：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text msg-inforSort" autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <!-- 信息标题-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">信息标题：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text msg-inforTitle" autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+
+
+                                    <!-- 文件上传 -->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">上传附件：</label>
+                                        <div class="formControls upload-file  col-xs-8 col-sm-9">
+                                            <span class="btn-upload form-group">
+                                                <input class="input-text upload-url" type="text" name="msg-uploadfile-2" id="msg-uploadfile-3" readonly="">
+                                                <a href="javascript:void();" class="btn btn-primary upload-btn">
+                                                    <i class="Hui-iconfont"></i> 浏览文件</a>
+                                                <input type="file" multiple="" name="msg-file-3" class="input-file msgfile">
+                                            </span>
+                                            <br>
+                                            <span>允许上传文件格式为：jpg,png,bmp,gif,doc,xls,txt,zip;附件小于5M;</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 信件内容-->
+                                    <div class="row cl">
+                                        <label class="form-label col-xs-4 col-sm-3">留言内容：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <textarea class="textarea msg-txt" placeholder="" rows="" cols="" name=""></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- 公开意愿-->
+                                    <div class="row cl public-or">
+                                        <label class="form-label col-xs-4 col-sm-3">公开意愿：</label>
+                                        <div class="formControls ispublic skin-minimal col-xs-8 col-sm-9">
+                                            <div class="radio-box">
+                                                <div class="iradio-blue checked" id="msg_public_y">
+                                                    <input type="radio" id="msg-pui-0" name="msg-pui" checked="" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="msg-pui-0" class="">同意</label>
+                                            </div>
+                                            <div class="radio-box">
+                                                <div class="iradio-blue" id="msg_public_n">
+                                                    <input type="radio" id="msg-pui-1" name="msg-pui" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity:0;">
+                                                    <!-- <ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins> -->
+                                                </div>
+                                                <label for="msg-pui-1" class="">不同意</label>
+                                            </div>
+                                            <span>如果您选择"不同意",我们将对您的写信内容及办理结果不进行公示！</span>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- 验证码-->
+                                    <div class="row cl auth-box">
+                                        <label class="form-label col-xs-4 col-sm-3">验证码：</label>
+                                        <div class="formControls col-xs-8 col-sm-9">
+                                            <input type="text" class="input-text authCode" id="msg-authCode" autocomplete="off" placeholder="">
+
+                                            <!--注： 开发中后台如果展示的图片验证码，将span中文字去掉，img标签注释去掉 -->
+                                            <span>
+                                                6+9=？
+                                                <!-- <img alt="" src="" id="msg_auth_img" align="absmiddle">-->
+                                            </span>
+                                            <button id="msg_auth_togbtn">看不清，请换一张</button>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- border -->
+                                    <div class="gay-boder col-xs-12 col-sm-12">
+
+                                    </div>
+
+
+                                    <!-- 提交 -->
+                                    <div class="btn-btm  cl col-xs-6 col-sm-6">
+                                        <div class="fr ">
+                                            <input class="btn btn-primary " id="msg-sub" type="submit" value="提 交">
+                                        </div>
+                                    </div>
+
+                                    <!-- 重置 -->
+                                    <div class="btn-btm  cl col-xs-6 col-sm-6 ">
+                                        <div class="fl ">
+                                            <input class="btn btn-reset" id="msg-res" type="submit" value="重 置">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+
+
+
+                        <!--分栏4 便民问答-->
+                        <div class="pc-right col-xs-12 col-sm-9 col-md-9 col-lg-10" id="pc-right-five">
+                            <div class="title-top">
+                                <img src="./images/house.png" alt="" class="house">
+                                <span>互动交流</span>
+                                <img src="./images/icon.png" alt="" class="gray-icon">
+                                <span>便民问答</span>
+                                <!--<img class="search-img" src="pages/publication/images/search.png" alt="" width="300px" height="36px">-->
+                            </div>
+                            <!--<div class="border"></div>-->
+
+                            <!--分类标题-->
+                            <div class="classify-title">
+                                <span class="ms-tl">
+                                    信件标题
+                                </span>
+                                <span class="rf-nm">
+                                    来信人
+                                </span>
+                                <span class="rl-date">
+                                    来信时间
+                                </span>
+                            </div>
+                            <!--分类列表-->
+                            <div class="classify-list">
+                                <ul>
+                                    <li class="clearfix">
+                                        <a href="./folkanswer.html" target="_blank">
+                                            <span class="ls-ms-tl">
+                                                上海危险化学品生产企业搬迁改造计划
+                                            </span>
+                                            <span class="ls-rf-nm">
+                                                匿名
+                                            </span>
+                                            <span class="ls-rl-date">
+                                                2017-12-21
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./folkanswer.html" target="_blank">
+                                            <span class="ls-ms-tl">
+                                                上海危险化学品生产企业搬迁改造计划
+                                            </span>
+                                            <span class="ls-rf-nm">
+                                                匿名
+                                            </span>
+                                            <span class="ls-rl-date">
+                                                2017-12-21
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./folkanswer.html" target="_blank">
+                                            <span class="ls-ms-tl">
+                                                上海危险化学品生产企业搬迁改造计划
+                                            </span>
+                                            <span class="ls-rf-nm">
+                                                匿名
+                                            </span>
+                                            <span class="ls-rl-date">
+                                                2017-12-21
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./folkanswer.html" target="_blank">
+                                            <span class="ls-ms-tl">
+                                                上海危险化学品生产企业搬迁改造计划
+                                            </span>
+                                            <span class="ls-rf-nm">
+                                                匿名
+                                            </span>
+                                            <span class="ls-rl-date">
+                                                2017-12-21
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./folkanswer.html" target="_blank">
+                                            <span class="ls-ms-tl">
+                                                上海危险化学品生产企业搬迁改造计划
+                                            </span>
+                                            <span class="ls-rf-nm">
+                                                匿名
+                                            </span>
+                                            <span class="ls-rl-date">
+                                                2017-12-21
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./folkanswer.html" target="_blank">
+                                            <span class="ls-ms-tl">
+                                                上海危险化学品生产企业搬迁改造计划
+                                            </span>
+                                            <span class="ls-rf-nm">
+                                                匿名
+                                            </span>
+                                            <span class="ls-rl-date">
+                                                2017-12-21
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./folkanswer.html" target="_blank">
+                                            <span class="ls-ms-tl">
+                                                上海危险化学品生产企业搬迁改造计划
+                                            </span>
+                                            <span class="ls-rf-nm">
+                                                匿名
+                                            </span>
+                                            <span class="ls-rl-date">
+                                                2017-12-21
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./folkanswer.html" target="_blank">
+                                            <span class="ls-ms-tl">
+                                                上海危险化学品生产企业搬迁改造计划
+                                            </span>
+                                            <span class="ls-rf-nm">
+                                                匿名
+                                            </span>
+                                            <span class="ls-rl-date">
+                                                2017-12-21
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!--分栏5 在线访谈-->
+                        <div class="pc-right col-xs-12 col-sm-9 col-md-9 col-lg-10" id="pc-right-six">
+                            <div class="title-top">
+                                <img src="./images/house.png" alt="" class="house">
+                                <span>互动交流</span>
+                                <img src="./images/icon.png" alt="" class="gray-icon">
+                                <span>在线访谈</span>
+                                <!--<img class="search-img" src="pages/publication/images/search.png" alt="" width="300px" height="36px">-->
+                            </div>
+                            <div class="border"></div>
+
+                            <div class="classify-list">
+                                <ul>
+                                    <li class="clearfix">
+                                        <a href="./interactionContent.html" target="_blank">
+                                            <span class="ls-ms-tl fl">
+                                                <i></i>
+                                                李彩云总工程师做客上海人民广播电台“政风行风热线”与市民互动交流
+                                            </span>
+                                            <span class="ls-rl-date fr">
+                                                2018-01-15
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./interactionContent.html" target="_blank">
+                                            <span class="ls-ms-tl fl">
+                                                <i></i>
+                                                花克勤同志做客上海人民广播电台“政风行风热线”节目
+                                            </span>
+                                            <span class="ls-rl-date fr">
+                                                2018-01-12
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./interactionContent.html" target="_blank">
+                                            <span class="ls-ms-tl fl">
+                                                <i></i>
+                                                李彩云总工程师做客上海人民广播电台“政风行风热线”与市民互动交流
+                                            </span>
+                                            <span class="ls-rl-date fr">
+                                                2018-01-15
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./interactionContent.html" target="_blank">
+                                            <span class="ls-ms-tl fl">
+                                                <i></i>
+                                                花克勤同志做客上海人民广播电台“政风行风热线”节目
+                                            </span>
+                                            <span class="ls-rl-date fr">
+                                                2018-01-12
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./interactionContent.html" target="_blank">
+                                            <span class="ls-ms-tl fl">
+                                                <i></i>
+                                                李彩云总工程师做客上海人民广播电台“政风行风热线”与市民互动交流
+                                            </span>
+                                            <span class="ls-rl-date fr">
+                                                2018-01-15
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./interactionContent.html" target="_blank">
+                                            <span class="ls-ms-tl fl">
+                                                <i></i>
+                                                花克勤同志做客上海人民广播电台“政风行风热线”节目
+                                            </span>
+                                            <span class="ls-rl-date fr">
+                                                2018-01-12
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./interactionContent.html" target="_blank">
+                                            <span class="ls-ms-tl fl">
+                                                <i></i>
+                                                李彩云总工程师做客上海人民广播电台“政风行风热线”与市民互动交流
+                                            </span>
+                                            <span class="ls-rl-date fr">
+                                                2018-01-15
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="./interactionContent.html" target="_blank">
+                                            <span class="ls-ms-tl fl">
+                                                <i></i>
+                                                花克勤同志做客上海人民广播电台“政风行风热线”节目
+                                            </span>
+                                            <span class="ls-rl-date fr">
+                                                2018-01-12
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <!--分栏6 在线调查-->
+                        <div class="pc-right col-xs-12 col-sm-9 col-md-9 col-lg-10" id="pc-right-seven">
+                            <div class="title-top">
+                                <img src="./images/house.png" alt="" class="house">
+                                <span>互动交流</span>
+                                <img src="./images/icon.png" alt="" class="gray-icon">
+                                <span>在线调查</span>
+                                <!--<img class="search-img" src="pages/publication/images/search.png" alt="" width="300px" height="36px">-->
+                            </div>
+                            <!--分类标题-->
+                            <div class="classify-title">
+                                <span class="ms-tl">
+                                    调查标题
+                                </span>
+                                <span class="rf-nm">
+                                    参与调查
+                                </span>
+                                <span class="rl-date">
+                                    截止时间
+                                </span>
+                            </div>
+
+
+                            <div class="classify-list">
+                                <ul>
+                                    <li class="clearfix">
+                                        <span class="ls-ms-tl fl">
+                                            <a href="./surveyContent.html
+                                        " target="_blank">
+                                                上海市安全生产监督管理局门户网站上线问卷调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rf-nm">
+                                            <a href="./surveyContent.html" target="_blank">
+                                                参与调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rl-date fr">
+                                            2017-12-22
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="ls-ms-tl fl">
+                                            <a href="./surveyContent.html
+                                        " target="_blank">
+                                                上海市安全生产监督管理局门户网站上线问卷调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rf-nm">
+                                            <a href="./surveyContent.html" target="_blank">
+                                                参与调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rl-date fr">
+                                            2017-12-22
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="ls-ms-tl fl">
+                                            <a href="./surveyContent.html
+                                        " target="_blank">
+                                                上海市安全生产监督管理局门户网站上线问卷调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rf-nm">
+                                            <a href="./surveyContent.html" target="_blank">
+                                                参与调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rl-date fr">
+                                            2017-12-22
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="ls-ms-tl fl">
+                                            <a href="./surveyContent.html
+                                        " target="_blank">
+                                                上海市安全生产监督管理局门户网站上线问卷调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rf-nm">
+                                            <a href="./surveyContent.html" target="_blank">
+                                                参与调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rl-date fr">
+                                            2017-12-22
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="ls-ms-tl fl">
+                                            <a href="./surveyContent.html
+                                        " target="_blank">
+                                                上海市安全生产监督管理局门户网站上线问卷调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rf-nm">
+                                            <a href="./surveyContent.html" target="_blank">
+                                                参与调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rl-date fr">
+                                            2017-12-22
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="ls-ms-tl fl">
+                                            <a href="./surveyContent.html
+                                        " target="_blank">
+                                                上海市安全生产监督管理局门户网站上线问卷调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rf-nm">
+                                            <a href="./surveyContent.html" target="_blank">
+                                                参与调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rl-date fr">
+                                            2017-12-22
+                                        </span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="ls-ms-tl fl">
+                                            <a href="./surveyContent.html
+                                        " target="_blank">
+                                                上海市安全生产监督管理局门户网站上线问卷调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rf-nm">
+                                            <a href="./surveyContent.html" target="_blank">
+                                                参与调查
+                                            </a>
+                                        </span>
+
+                                        <span class="ls-rl-date fr">
+                                            2017-12-22
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--公共底部区域-->
+    <footer class="tfoot ">
+        <div class="siteMap">
+            <span>网站导航</span>
+            <select name="country" id="country">
+                <option value="全国安检系统网站1">全国安检系统网站1</option>
+                <option value="全国安检系统网站2">全国安检系统网站2</option>
+                <option value="全国安检系统网站3">全国安检系统网站3</option>
+            </select>
+            <select name="government" id="government">
+                <option value="全国安检系统网站1">市政府部门网站1</option>
+                <option value="全国安检系统网站2">市政府部门网站2</option>
+                <option value="全国安检系统网站3">市政府部门网站3</option>
+            </select>
+            <select name="department" id="department">
+                <option value="全国安检系统网站1">直属单位网站1</option>
+                <option value="全国安检系统网站2">直属单位网站2</option>
+                <option value="全国安检系统网站3">直属单位网站3</option>
+            </select>
+        </div>
+
+        <div class="tfoot-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="btm-left clearfix col-xs-6 col-sm-6">
+                        <div class="btn-wap fl">
+                            <a href="../websiteWap/websiteWap.html" target="_blank">
+                                <img src="../publicModule/images/foot-wap.png" alt="">
+                            </a>
+                        </div>
+                        <div class="btm-left-content fl">
+                            <span class="span-one">安全生产监督管理局</span>
+                            <span>联系电话： 12350</span>
+                            <span>技术支持：上海中威天安公共安全科技有限公司</span>
+                            <span class="cockade"><img src="../publicModule/images/cockade.png" alt="">沪公网安备 320XXXXXXXXX号</span>
+                        </div>
+                    </div>
+
+                    <div class="btm-right clearfix col-xs-6 col-sm-6">
+                        <div class="btn-party fl">
+                            <a href="../websiteWap/websiteWap.html" target="_blank">
+                                <img src="../publicModule/images/foot-wap2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="btm-right-content fl">
+                            <span class="span-one">临港安全生产</span>
+                            <span>LinGang Administration of Work Safety</span>
+                            <span>沪ICP备110XXXX号</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- 公共底部结束 -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/jquery-1.12.4.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/interaction.js"></script>
+    <script src="./js/H-ui.min.js"></script>
+    <script src="../publicModule/js/TopFoot.js"></script>
+
+</body>
+
+</html>

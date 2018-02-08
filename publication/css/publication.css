@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+/*内容展示*/
+
+section.ct-box{
+    background-color: #ffffff;
+}
+
+section.ct-box .pc-left ul{
+    margin-top:20px;
+}
+
+ 
+/*侧边导航*/
+section.ct-box .pc-left>ul>li{
+    /* width: 220px; */
+    line-height:50px;
+    margin-top:4px;
+    background-color: #f6f6f6;
+    color: #000000;
+    padding: 0;
+
+}
+
+
+section.ct-box .pc-left>ul>li.arrow{
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+section.ct-box ul>.pc-left-one{
+    height: 50px;
+}
+section.ct-box ul>.pc-left-one img{
+    height: 100%;
+    width: 100%;
+}
+
+section.ct-box .pc-left>ul>li .show-title{
+    cursor: pointer;
+    text-align: center;
+}
+section.ct-box .pc-left>ul li.arrow img{
+    width: 8px;
+    height: 6px;
+    display: inline-block;
+    margin-left: 5px;
+}
+section.ct-box .pc-left>ul li span{
+    color: #333333;
+    font-size: 16px;
+}
+section.ct-box .pc-left>ul li .hid{
+    /*display:none ;*/
+}
+
+section.ct-box .pc-left>ul li:hover span{
+    color: #4075c5;
+}
+
+/*二级菜单样式*/
+section.ct-box .pc-left>ul li.arrow .hid{
+    display: none;
+}
+section.ct-box .pc-left>ul li.pc-left-two .hid{
+    display: block;
+}
+
+section.ct-box .pc-left>ul li.arrow .hid p{
+    width:100%;
+    height: 30px;
+    line-height:30px;
+    text-align: center;
+    color: rgba(0,0,0,0.8);
+    font-size: 14px;
+    margin-top:4px;
+}
+
+/*section.ct-box .pc-left>ul li.arrow .hid img{*/
+    /*width: 9px;*/
+    /*height: 9px;*/
+/*}*/
+
+
+
+section.ct-box .pc-left  li .hid p:hover{
+    color: #4075c5 !important;
+    cursor: pointer;
+}
+
+@media (max-width: 360px){
+
+#pc-left{
+    padding-left: 3px;
+    padding-right: 3px;
+ }
+ 
+}
+
+@media (max-width: 767px){
+    
+        section.ct-box .pc-left>ul>li{
+            width:33%;
+            line-height:50px;
+            float: left;
+        }
+        .hid{
+            display:none; 
+            position: absolute;
+            z-index: 9999;
+            width: 30%;
+            background: #f6f6f6;
+            
+        }
+        #menu-hid{
+            display:none; 
+        }
+        /* .tog-class{
+            background: none;
+        } */
+      
+    }
+    
+
+
+
+
+
+/*右侧内容*/
+.Ahover{
+    color: #4075c5 !important;
+}
+
+/* section.ct-box .pc-right{
+  
+} */
+section.ct-box .pc-right .title-top{
+    height:68px;
+    color: #999999;
+    font-size: 12px;
+    padding-top:20px;
+}
+
+.title-top a:hover{
+    color:#2869c1;
+}
+
+@media (min-width: 767px){
+section.ct-box .pc-right{
+    /* padding: 0;
+    padding-left: 5px; */
+ }
+}
+
+
+
+
+section.ct-box .pc-right .border{
+    width: 100%;
+    height:1px;
+    background-color: #F9F9F9;
+}
+section.ct-box .pc-right .title-top span{
+    margin-left:5px;
+}
+section.ct-box .pc-right .title-top img{
+    display: inline-block;
+}
+.ct-box .pc-right .title-top .house{
+    margin-bottom: 2px;
+    width: 14px;
+    height:14px;
+}
+.ct-box .pc-right .title-top .gray-icon{
+    width: 3px;
+    height: 6px;
+    margin-left: 5px;
+}
+
+/*信息列表*/
+.pc-right .classify{
+    /* height: 50px; */
+    line-height:50px;
+    padding-left: 15px;
+}
+.pc-right .classify span{
+    color: #000;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.pc-right .classify span:hover{
+    color: #4075c5;
+}
+
+
+/*列表模板    */
+.pc-right .classify-title{
+    /* height:50px;
+    line-height:50px; */
+    background-color: #F9F9F9;
+    padding-top:15px;
+    padding-bottom: 15px; 
+    margin-bottom:4px;
+}
+.pc-right .classify-title .ms-tl{
+    width: 58%;
+}
+.pc-right .classify-title .rf-nm{
+    width: 20%;
+}
+.pc-right .classify-title .rl-date{
+    width:20%;
+}
+
+@media (max-width: 420px){
+    
+    .pc-right .classify-title .ms-tl{
+        width: 54%;
+    }
+    .pc-right .classify-title .rf-nm{
+        width: 16%;
+    }
+    .pc-right .classify-title .rl-date{
+        width:27%;
+    }
+
+    .pc-right .classify-title{
+        /* height:100px;
+        line-height:50px; */
+     }
+ }
+
+.pc-right .classify-title span{
+    display:inline-block;
+    font-size: 14px;
+    text-align: center;
+}
+.pc-right .classify-list{
+    /*height:1000px;*/
+    /* width: 960px; */
+    width: 100%;
+    background-color:#F9F9F9;
+    margin-bottom:100px;
+}
+.pc-right .classify-list ul{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+.pc-right .classify-list ul li{
+    margin-bottom:20px;
+}
+.pc-right .classify-list .ls-ms-tl{
+    width: 60%;
+     text-align:left;
+    padding-left:5px; 
+    overflow : hidden;
+    text-overflow: ellipsis;
+    float: left;
+    display: -webkit-box;
+    /* 这个是具体到到少行 */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.pc-right .classify-list .ls-rf-nm{
+    width: 20%;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    float: left;
+    display: -webkit-box;
+    /* 这个是具体到到少行 */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.pc-right .classify-list .ls-rl-date{
+    width: 18%;
+    vertical-align: top;
+}
+.pc-right .classify-list span{
+    display:inline-block;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}
+.pc-right .classify-list li:hover span{
+    color: #4075c5;
+}
+
+
+
+
+
+
+
+/* 申请公开 */
+
+
+#public_form{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#apply_pablic{
+    display: none;
+}
+
+ 
+.table_xxzx {
+    border-collapse: collapse;
+}
+
+.table_xxzx td {
+    height: 14px;
+    line-height: 14px;
+    padding: 5px 1px;
+    border: 1px solid #999;
+    font-size: 12px;
+}
+
+.table_red {
+    background: #ffeeee;
+    border: 1px solid #e70000;
+    font-size: 12px;
+}
+
+.table_hui {
+    background: #f8f8f8;
+}
+
+.text1 {
+    /* border: 1px solid #CCC; */
+    height: 100%;
+    width: 100%;
+}
+.text2 {
+    border: 1px solid #CCC;
+    width: 99%;
+}
+
+.table_xxzx td textarea{
+    border: 0;
+    outline: none;
+}
+
+
+
+input{
+    outline: none;
+}
+
+
+#public_form .btn_submitBtn{
+    margin-top: 20px;
+}
+
+
+#bt_submit .btn-submit{
+    color: #ffffff;
+    background-color: #00c4ef;
+    height:27px; 
+   
+}
+
+
+
+   /* 头部导航栏点击高亮 */
+   nav .nav span.publication_navColor{
+    background-color: #5cc025;
+    cursor: pointer;
+}
+    nav .nav span.XXGK_navColor{
+    background-color: #5cc025;
+    cursor: pointer;
+}
+
+/* 搜索框手机端隐藏 */
+@media (max-width: 750px) {
+	header .head-search{
+	 display: none !important;	
+	}
+	.mobile-search  .head-search{
+		display: none !important;	
+	   }
+	 
+}

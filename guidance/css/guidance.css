@@ -1,0 +1,462 @@
+@charset "utf-8";
+
+/*内容展示*/
+
+section.ct-box{
+    background-color: #ffffff;
+}
+
+section.ct-box .pc-left ul{
+    margin-top:20px;
+}
+
+/*section.ct-box .ep-left ul .ep-left-one span{*/
+    /*color:#2869c1;*/
+    /*}*/
+
+    
+/*侧边导航*/
+section.ct-box .pc-left>ul>li{
+    /* width: 220px; */
+    line-height:50px;
+    margin-top:4px;
+    background-color: #f6f6f6;
+    color: #000000;
+    padding: 0;
+
+}
+
+section.ct-box .pc-left>ul>li.pc-left-two{
+    background-color: #e3e3e3;
+}
+section.ct-box .pc-left>ul>li .show-title{
+    cursor: pointer;
+    text-align: center;
+}
+section.ct-box ul>.pc-left-one{
+    height: 50px;
+}
+section.ct-box ul>.pc-left-one img{
+    height: 100%;
+    width: 100%;
+}
+section.ct-box .pc-left>ul li.arrow img{
+    width: 10px;
+    height: 6px;
+    /*display: inline-block;*/
+    float: right;
+    margin-right: 20px;
+    margin-top:10px;
+}
+section.ct-box .pc-left>ul li span{
+    color: #333333;
+    font-size: 16px;
+}
+section.ct-box .pc-left>ul li .hid{
+    /*display:none ;*/
+}
+
+section.ct-box .pc-left>ul li:hover span{
+    color: #4075c5;
+}
+
+   
+@media (max-width:767px){
+        section.ct-box .pc-left>ul>li{
+            width:33%;
+            line-height:50px;
+            float: left;
+        }
+    }
+
+
+
+/*右侧内容*/
+.Ahover{
+    color: #4075c5 !important;
+}
+
+section.ct-box .pc-right{
+    /* margin-left: 20px; */
+    /*min-height: 960px;*/
+    margin-bottom: 20px;
+}
+
+
+
+.title-top a:hover{
+    color:#2869c1;
+}
+
+section.ct-box .pc-right .title-top{
+    height:68px;
+    color: #999999;
+    font-size: 12px;
+    padding-top:20px;
+}
+
+section.ct-box .pc-right .title-top .guidance-sort span{
+    color: #000000;
+    font-size: 16px;
+    margin-right: 20px;
+}
+section.ct-box .pc-right .title-top .guidance-sort span:hover{
+    color:#337ab7;
+}
+section.ct-box .pc-right .border{
+    /* width:960px; */
+    height:1px;
+    background-color: #e3e3e3;
+}
+
+section.ct-box .pc-right .title-top span{
+    margin-left:5px;
+}
+section.ct-box .pc-right .title-top img{
+    display: inline-block;
+}
+.ct-box .pc-right .title-top .house{
+    margin-bottom: 2px;
+    width: 14px;
+    height:14px;
+}
+.ct-box .pc-right .title-top .gray-icon{
+    width: 3px;
+    height: 6px;
+    margin-left: 5px;
+}
+
+
+
+
+
+/*分栏样式*/
+
+#pc-right-four,
+#pc-right-five,
+#pc-right-six,
+#pc-right-seven{
+    display:none;
+}
+
+
+
+/*分栏1 网上办事*/
+
+.pc-right .guidance-box .classify-title{
+     
+    background-color: #F9F9F9;
+    padding-top:15px;
+    padding-bottom: 15px; 
+    margin-bottom:4px;
+}
+
+.pc-right .guidance-box .classify-list li a{
+display: inline-block;
+}
+
+
+
+.pc-right .classify-title .matter{
+    width: 52%;
+}
+.pc-right .classify-title .online{
+    width: 15%;
+}
+.pc-right .classify-title .instruction{
+    width:15%;
+}
+.pc-right .classify-title .inquire{
+    width:15%;
+}
+
+
+
+/* .pc-right .classify-title span{
+    display:inline-block;
+    font-size: 14px;
+    text-align: center;
+} */
+
+
+.pc-right .guidance-box .classify-list li img{
+    width: 30px;
+    height: 25px;
+    margin: 0 auto;
+   
+}
+.pc-right .classify-list .matter-ls{
+    width: 52%;
+    overflow : hidden;
+    text-align:left;
+    padding-left:5px; 
+    text-overflow: ellipsis;
+    float: left;
+    display: -webkit-box;
+    /* 这个是具体到到少行 */
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.pc-right .classify-list .online-ls{
+    width: 15%;
+    vertical-align: top;
+    
+}
+.pc-right .classify-list .instruction-ls{
+    width: 15%;
+    vertical-align: top;
+    
+}
+.pc-right .classify-list .inquire-ls{
+    width: 15%;
+    vertical-align: top;
+}
+.pc-right  .guidance-box .classify-list .matter-ls{
+    padding-left:10px; 
+}
+.pc-right .guidance-box .classify-list li:hover span{
+    color: #000;
+}
+
+.pc-right  .guidance-box .classify-list .matter-ls:hover{
+    color: #4075c5;
+}
+
+@media (max-width: 420px){
+    
+.pc-right .classify-title .matter{
+    width:33%;
+}
+.pc-right .classify-title .online{
+    width: 58px;
+}
+.pc-right .classify-title .instruction{
+    width:58px;
+}
+.pc-right .classify-title .inquire{
+    width:58px;
+}
+.pc-right .classify-list .matter-ls{
+    width: 45%;
+}
+.pc-right .classify-list .online-ls{
+    width: 17%;
+  
+}
+.pc-right .classify-list .instruction-ls{
+    width: 17%;
+}
+.pc-right .classify-list .inquire-ls{
+    width: 17%;
+}
+section.ct-box .pc-right .title-top .guidance-sort span {
+    margin-right: 10px;
+    }
+    
+ }
+
+
+/*分栏2 办事指南*/
+
+/*信息列表   */
+.pc-right .classify-title{
+    /* height:50px;
+    line-height:50px; */
+    background-color: #F9F9F9;
+    padding-top:15px;
+    padding-bottom: 15px; 
+    margin-bottom:4px;
+}
+.pc-right .classify-title .ms-tl{
+    width: 59%;
+}
+.pc-right .classify-title .rf-nm{
+    width: 20%;
+}
+.pc-right .classify-title .rl-date{
+    width:18%;
+}
+
+@media (max-width: 420px){
+    
+    .pc-right .classify-title .ms-tl{
+        width: 54%;
+    }
+    .pc-right .classify-title .rf-nm{
+        width: 16%;
+    }
+    .pc-right .classify-title .rl-date{
+        width:27%;
+    }
+
+    .pc-right .classify-title{
+        /* height:100px;
+        line-height:50px; */
+     }
+ }
+
+.pc-right .classify-title span{
+    display:inline-block;
+    font-size: 14px;
+    text-align: center;
+}
+.pc-right .classify-list{
+    /*height:1000px;*/
+    /* width: 960px; */
+    width: 100%;
+    background-color:#F9F9F9;
+    margin-bottom:100px;
+}
+.pc-right .classify-list ul{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+.pc-right .classify-list ul li{
+    margin-bottom:20px;
+}
+.pc-right .classify-list .ls-ms-tl{
+    width: 60%;
+    overflow : hidden;
+    text-align:left;
+    padding-left:5px; 
+    text-overflow: ellipsis;
+    float: left;
+    display: -webkit-box;
+    /* 这个是具体到到少行 */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.pc-right .classify-list .ls-rf-nm{
+    width: 20%;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    float: left;
+    display: -webkit-box;
+    /* 这个是具体到到少行 */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.pc-right .classify-list .ls-rl-date{
+    width: 18%;
+    vertical-align: top;
+}
+.pc-right .classify-list span{
+    display:inline-block;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}
+.pc-right .classify-list li:hover span{
+    color: #4075c5;
+}
+
+
+/* 信息头部icon */
+.pc-right .classify-list span.ls-ms-tl i{
+    width:4px;
+    height: 4px;
+    border-radius:2px;
+    margin-bottom:3px;
+    margin-right:4px;
+    background-color:dodgerblue;
+    display:inline-block;
+}
+
+
+
+
+/*分栏3 表格下载*/
+
+
+
+/*分栏4 便民服务*/
+
+
+
+/*分栏5 查询服务*/
+
+.pc-right .inquire-sort{
+    background-color:#F9F9F9;
+    width: 100%;
+}
+.pc-right .inquire-sort .inquire-sortBox{
+    padding: 20px;
+    font-size: 0;
+}
+.pc-right .inquire-sort .inquire-sortBox span{
+    height: 210px;
+    padding:0;
+}
+.pc-right .inquire-sort .inquire-sortBox a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.pc-right .inquire-sort .inquire-sortBox img{
+    width:100%;
+    height:100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.pc-right .inquire-sort .inquire-sortBox  span:nth-child(1){
+    padding-right: 10px;
+    padding-bottom:10px;
+}
+.pc-right .inquire-sort .inquire-sortBox  span:nth-child(2){
+    padding-left:10px;
+    padding-bottom:10px;
+}
+.pc-right .inquire-sort .inquire-sortBox  span:nth-child(3){
+    padding-right: 10px;
+    padding-top:10px;
+}
+.pc-right .inquire-sort .inquire-sortBox  span:nth-child(4){
+    padding-left:10px;
+    padding-top:10px;
+}
+
+
+
+@media (max-width:767px){
+
+    .pc-right .inquire-sort .inquire-sortBox  span:nth-child(1){
+        padding: 0;
+        padding-bottom:20px;
+    }
+    .pc-right .inquire-sort .inquire-sortBox  span:nth-child(2){
+        padding: 0;
+        padding-bottom:20px;
+    }
+    .pc-right .inquire-sort .inquire-sortBox  span:nth-child(3){
+        padding: 0;
+        padding-bottom:20px;
+    }
+    .pc-right .inquire-sort .inquire-sortBox  span:nth-child(4){
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+/* 头部导航栏点击高亮 */
+nav .nav span.guidance_navColor{
+	background-color: #5cc025;
+	cursor: pointer;
+}
+nav .nav span.WSBS_navColor{
+	background-color: #5cc025;
+	cursor: pointer;
+}
+/* 搜索框手机端隐藏 */
+@media (max-width: 750px) {
+	header .head-search{
+	 display: none !important;	
+	}
+	.mobile-search  .head-search{
+		display: none !important;	
+	   }
+	 
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口标签 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 上述3个meta标签*必须*放在最前面，其他任何内容都*必须*跟随其后！ -->
+    <title>临港智慧安全基础支撑系统门户网站</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../publicModule/css/base.css">
+    <link rel="stylesheet" href="./css/enterpriseSearch.css">
+    <link rel="stylesheet" href="../publicModule/css/TopFoot.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="lib/bootstrap/js/html5shiv.min.js"></script>
+    <script src="lib/bootstrap/js/respond.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- 公共头部开始 -->
+    <!--顶部区域-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="head  clearfix">
+                    <div class="head-login fr">
+                        <a href="javascript:;">请登录...</a>
+                    </div>
+                    <div class="logo-box col-xs-12">
+                        <div class="head-logo col-xs-8">
+
+
+                        </div>
+                        <!-- 手机端 nav切换 -->
+                        <div class="navbar-header " id="navbar-header">
+                            <button type="button" class="navbar-toggle">
+
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- pc端搜索框 -->
+                    <div class="head-search fr col-xs-12 .col-md-4">
+                        <input type="text" value="输入关键字">
+                        <a href="../search/search.html">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 手机端搜索框 -->
+    <div class="mobile-search">
+        <div class="head-search  col-xs-12">
+            <input type="text" value="输入关键字">
+            <a href="../search/search.html">
+                <span></span>
+            </a>
+        </div>
+    </div>
+
+    <!--导航区域-->
+    <nav id="nav-tog">
+        <div class="container">
+            <div class="row">
+                <div class="nav">
+                    <span class="index_navColor col-xs-3 col-sm-2">
+                        <a href="../index.html">
+                            首页
+                        </a>
+                    </span>
+                    <span class="enterprise_navColor col-xs-3  col-sm-2">
+                        <a href="./enterprise.html">
+                            园区企业
+                        </a>
+                    </span>
+                    <span class="safety_navColor col-xs-3 col-sm-2">
+                        <a href="../safety/safety.html">
+                            安全动态
+                        </a>
+                    </span>
+                    <span class="publication_navColor col-xs-3 col-sm-2">
+                        <a href="../publication/publication.html">
+                            信息公开
+                        </a>
+                    </span>
+                    <span class="interaction_navColor col-xs-3 col-sm-2">
+                        <a href="../interaction/interaction.html">
+                            互动交流
+                        </a>
+                    </span>
+                    <span class="guidance_navColor col-xs-3 col-sm-2">
+                        <a href="../guidance/guidance.html">
+                            网上办事
+                        </a>
+                    </span>
+                    <span class="policy_navColor col-xs-3 col-sm-2">
+                        <a href="../policy/policy.html">
+                            政策法规
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 公共头部结束 -->
+
+
+    <!--内容展示-->
+    <section class="ct-box">
+        <div class="container">
+            <div class="row">
+                <div class="ep-box clearfix">
+
+                    <!--左边栏-->
+                    <div class="ep-left  col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                        <ul>
+                            <li class="ep-left-one hidden-xs">
+                                <a href="javascript:;">
+                                    <!-- <img src="./images/title.png" alt=""> -->
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="ep-left-two arrow">
+                                <a href="./enterprise.html">
+                                    <!--<img src="pages/enterprise/images/arrow.png" alt="">-->
+                                    <span>园区概况</span>
+                                </a>
+                            </li>
+                            <li class="ep-left-three arrow">
+                                <a href="./enterpriseSurvey.html">
+                                    <!--<img src="pages/enterprise/images/arrow.png" alt="">-->
+                                    <span>企业概况</span>
+                                </a>
+                            </li>
+                            <li class="ep-left-four arrow">
+                                <a href="./enterpriseSearch.html" id="active-gray">
+                                    <!--<img src="pages/enterprise/images/arrow.png" alt="">-->
+                                    <span>企业搜索</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--右边栏-->
+                    <div class="ep-right  col-xs-12 col-sm-9 col-md-9 col-lg-10">
+                        <div class="title-top clearfix">
+                            <div class="title-top-left ">
+                                <img src="./images/house.png" alt="" class="house">
+                                <span>园区企业</span>
+                                <img src="./images/icon.png" alt="" class="gray-icon">
+                                <span>企业搜索</span>
+                            </div>
+                            <div class="ipt-search ">
+                                <select name="enterpriseSearch" id="enterpriseSearch">
+                                    <option value="企业名称">企业名称</option>
+                                    <option value="上海高科">上海高科</option>
+                                    <option value="上海高科">上海高科</option>
+                                </select>
+                                <input type="text">
+                                <span class="search-icon">
+                                    <a href=""></a>
+                                </span>
+                            </div>
+                        </div>
+                        <!--内容列表-->
+                        <div class="img-List">
+                            <ul>
+                                <li>
+                                    <a href="./enterpriseContent.html">
+                                        <div class="img-box fl">
+                                            <img src="./images/img01.png" alt="">
+                                        </div>
+                                        <div class="space-box fl">
+                                            <h2>上海高科技有限公司</h2>
+                                            <p class="ndustry">行 &nbsp;&nbsp;业：
+                                                <span>高科技研发</span>
+                                            </p>
+                                            <p class="address">地 &nbsp;&nbsp;址：
+                                                <span>上海市浦东新区张江高科技园区深海路89号</span>
+                                            </p>
+                                            <p class="principal">负责人：
+                                                <span>张强</span>
+                                            </p>
+                                            <p class="telephone">电 &nbsp;&nbsp;话：
+                                                <span>18698456224</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./enterpriseContent.html">
+                                        <div class="img-box fl">
+                                            <img src="./images/img01.png" alt="">
+                                        </div>
+                                        <div class="space-box fl">
+                                            <h2>上海高科技有限公司</h2>
+                                            <p class="ndustry">行 &nbsp;&nbsp;业：
+                                                <span>高科技研发</span>
+                                            </p>
+                                            <p class="address">地 &nbsp;&nbsp;址：
+                                                <span>上海市浦东新区张江高科技园区深海路89号</span>
+                                            </p>
+                                            <p class="principal">负责人：
+                                                <span>张强</span>
+                                            </p>
+                                            <p class="telephone">电 &nbsp;&nbsp;话：
+                                                <span>18698456224</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./enterpriseContent.html">
+                                        <div class="img-box fl">
+                                            <img src="./images/img01.png" alt="">
+                                        </div>
+                                        <div class="space-box fl">
+                                            <h2>上海高科技有限公司</h2>
+                                            <p class="ndustry">行 &nbsp;&nbsp;业：
+                                                <span>高科技研发</span>
+                                            </p>
+                                            <p class="address">地 &nbsp;&nbsp;址：
+                                                <span>上海市浦东新区张江高科技园区深海路89号</span>
+                                            </p>
+                                            <p class="principal">负责人：
+                                                <span>张强</span>
+                                            </p>
+                                            <p class="telephone">电 &nbsp;&nbsp;话：
+                                                <span>18698456224</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./enterpriseContent.html">
+                                        <div class="img-box fl">
+                                            <img src="./images/img01.png" alt="">
+                                        </div>
+                                        <div class="space-box fl">
+                                            <h2>上海高科技有限公司</h2>
+                                            <p class="ndustry">行 &nbsp;&nbsp;业：
+                                                <span>高科技研发</span>
+                                            </p>
+                                            <p class="address">地 &nbsp;&nbsp;址：
+                                                <span>上海市浦东新区张江高科技园区深海路89号</span>
+                                            </p>
+                                            <p class="principal">负责人：
+                                                <span>张强</span>
+                                            </p>
+                                            <p class="telephone">电 &nbsp;&nbsp;话：
+                                                <span>18698456224</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./enterpriseContent.html">
+                                        <div class="img-box fl">
+                                            <img src="./images/img01.png" alt="">
+                                        </div>
+                                        <div class="space-box fl">
+                                            <h2>上海高科技有限公司</h2>
+                                            <p class="ndustry">行 &nbsp;&nbsp;业：
+                                                <span>高科技研发</span>
+                                            </p>
+                                            <p class="address">地 &nbsp;&nbsp;址：
+                                                <span>上海市浦东新区张江高科技园区深海路89号</span>
+                                            </p>
+                                            <p class="principal">负责人：
+                                                <span>张强</span>
+                                            </p>
+                                            <p class="telephone">电 &nbsp;&nbsp;话：
+                                                <span>18698456224</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+                        <!--底部分页-->
+                        <div class="pages-box" id="page_modul">
+                            <div aria-label="Page navigation">
+                                <ul class="pagination pagination-lg">
+                                    <li class="disabled">
+                                        <a href="javascript:;" aria-hidden="true" aria-label="Previous">
+                                           &laquo; 
+                                        </a>
+                                    </li>
+
+                                    <li class="page-num ">
+                                        <a href="javascript:;">1</a>
+                                    </li>
+                                    <li class="page-num">
+                                        <a href="javascript:;">2</a>
+                                    </li>
+                                    <li class="page-num">
+                                        <a href="javascript:;">3</a>
+                                    </li>
+                                    <li class="page-num">
+                                        <a href="javascript:;">4</a>
+                                    </li>
+                                    <li class="page-num">
+                                        <a href="javascript:;">5</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:;" aria-hidden="true" aria-label="Next">
+                                             &raquo; 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--公共底部区域-->
+    <footer class="tfoot ">
+        <div class="siteMap">
+            <span>网站导航</span>
+            <select name="country" id="country">
+                <option value="全国安检系统网站1">全国安检系统网站1</option>
+                <option value="全国安检系统网站2">全国安检系统网站2</option>
+                <option value="全国安检系统网站3">全国安检系统网站3</option>
+            </select>
+            <select name="government" id="government">
+                <option value="全国安检系统网站1">市政府部门网站1</option>
+                <option value="全国安检系统网站2">市政府部门网站2</option>
+                <option value="全国安检系统网站3">市政府部门网站3</option>
+            </select>
+            <select name="department" id="department">
+                <option value="全国安检系统网站1">直属单位网站1</option>
+                <option value="全国安检系统网站2">直属单位网站2</option>
+                <option value="全国安检系统网站3">直属单位网站3</option>
+            </select>
+        </div>
+
+        <div class="tfoot-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="btm-left clearfix col-xs-6 col-sm-6">
+                        <div class="btn-wap fl">
+                            <a href="../websiteWap/websiteWap.html" target="_blank">
+                                <img src="../publicModule/images/foot-wap.png" alt="">
+                            </a>
+                        </div>
+                        <div class="btm-left-content fl">
+                            <span class="span-one">安全生产监督管理局</span>
+                            <span>联系电话： 12350</span>
+                            <span>技术支持：上海中威天安公共安全科技有限公司</span>
+                            <span class="cockade">
+                                <img src="../publicModule/images/cockade.png" alt="">沪公网安备 320XXXXXXXXX号</span>
+                        </div>
+                    </div>
+
+                    <div class="btm-right clearfix col-xs-6 col-sm-6">
+                        <div class="btn-party fl">
+                            <a href="../websiteWap/websiteWap.html" target="_blank">
+                                <img src="../publicModule/images/foot-wap2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="btm-right-content fl">
+                            <span class="span-one">临港安全生产</span>
+                            <span>LinGang Administration of Work Safety</span>
+                            <span>沪ICP备110XXXX号</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- 公共底部结束 -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./lib/jquery/jquery-1.12.4.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="./js/enterpriseSearch.js"></script>
+    <script src="../publicModule/js/TopFoot.js"></script>
+
+
+</body>
+
+</html>
